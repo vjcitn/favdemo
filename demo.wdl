@@ -13,7 +13,7 @@ task FunctionalAnnotation{
     }
     
     command <<< 
-      R --no-save --args ~{~{InputaGDS}} <<RSCRIPT
+      R --no-save --args ${InputaGDS} <<RSCRIPT
         library(gdsfmt)
         library(SeqArray)
         args <- commandArgs(trailingOnly = TRUE)
